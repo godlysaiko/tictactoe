@@ -1,0 +1,55 @@
+[package]
+name = "leo-package"
+version = "1.10.0"
+authors = [ "The Aleo Team <hello@aleo.org>" ]
+description = "Package parser for the Leo programming language"
+homepage = "https://aleo.org"
+repository = "https://github.com/AleoHQ/leo"
+keywords = [
+  "aleo",
+  "cryptography",
+  "leo",
+  "programming-language",
+  "zero-knowledge"
+]
+categories = [ "compilers", "cryptography", "web-programming" ]
+include = [ "Cargo.toml", "src", "README.md", "LICENSE.md" ]
+license = "GPL-3.0"
+edition = "2021"
+rust-version = "1.69"
+
+[dependencies.snarkvm]
+workspace = true
+
+[dependencies.leo-errors]
+path = "../../errors"
+version = "=1.10.0"
+
+[dependencies.indexmap]
+version = "1.9"
+features = [ "serde" ]
+
+[dependencies.rand]
+version = "0.8"
+
+[dependencies.serde]
+version = "1.0"
+features = [ "derive" ]
+
+[dependencies.toml]
+version = "0.8"
+
+[dependencies.tracing]
+version = "0.1"
+
+[dev-dependencies.lazy_static]
+version = "1.3.0"
+
+[dev-dependencies.snarkvm]
+workspace = true
+
+[features]
+default = [ "manifest_refactors" ]
+manifest_refactors = [ "manifest_refactor_project", "manifest_refactor_remote" ]
+manifest_refactor_project = [ ]
+manifest_refactor_remote = [ ]

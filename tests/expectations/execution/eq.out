@@ -1,0 +1,26 @@
+---
+namespace: Execute
+expectation: Pass
+outputs:
+  - - initial_symbol_table: edae9fa8632641c371df1554fab11d252c26d3e7c6b29037f2fe8334f0f6db1b
+      type_checked_symbol_table: 48be1f1a5410e758460ef8e4c3b770053d2ce7b438b4af6ae61480a0919451e6
+      unrolled_symbol_table: 48be1f1a5410e758460ef8e4c3b770053d2ce7b438b4af6ae61480a0919451e6
+      initial_ast: c1396a1b57dccd21779f451120d83cf3b32c0a928fcb98d823788db10893c7da
+      unrolled_ast: c1396a1b57dccd21779f451120d83cf3b32c0a928fcb98d823788db10893c7da
+      ssa_ast: f3415b722f52840d293b8e1d1bf01824e72525905490d482a5efc57ad180d57e
+      flattened_ast: 54830ce7948658908df1193ccd64d5b2c49a8b95d2caaba48d461e300813d500
+      destructured_ast: f82f13953f5262111bf3d16bcdd56a64fe1a9354259984bc8bdde29587c85be5
+      inlined_ast: f82f13953f5262111bf3d16bcdd56a64fe1a9354259984bc8bdde29587c85be5
+      dce_ast: f82f13953f5262111bf3d16bcdd56a64fe1a9354259984bc8bdde29587c85be5
+      bytecode: 15a3a90b1837b318b43b3f3bfc5e454a8821357b4c3feb01da00a4db810bde89
+      warnings: ""
+      results:
+        main:
+          - input: "[0u32, 1u32]"
+            output: "SnarkVMError('test.aleo/main' is not satisfied on the given inputs (13430 constraints).)"
+          - input: "[1u32, 1u32]"
+            output: "[true]"
+          - input: "[1u32, 2u32]"
+            output: "SnarkVMError('test.aleo/main' is not satisfied on the given inputs (13430 constraints).)"
+          - input: "[2u32, 2u32]"
+            output: "[true]"

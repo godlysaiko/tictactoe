@@ -1,0 +1,62 @@
+---
+namespace: Execute
+expectation: Pass
+outputs:
+  - - initial_symbol_table: 41812237c2e434a29988c6b1ed8871bb346ef67e642dcddb612d6cb0e029b41b
+      type_checked_symbol_table: 79e3a582beb557343ee95cca4e20c51c28673310796b8b4b6966f93b7574d2ad
+      unrolled_symbol_table: 79e3a582beb557343ee95cca4e20c51c28673310796b8b4b6966f93b7574d2ad
+      initial_ast: ea010f92ad04ada1ad18fb7cd7e2b5065da3af5ca989a02272dd0f8631624ba8
+      unrolled_ast: ea010f92ad04ada1ad18fb7cd7e2b5065da3af5ca989a02272dd0f8631624ba8
+      ssa_ast: 5bc1ce1c6376bc24d222c6fd77721d087ced592d5db473cc9a3215020dae229e
+      flattened_ast: 9c16351c8c95af773806233129b936dcc23c41b38a8dbf68cb15917ba0453341
+      destructured_ast: 8e4d99a433d9c2432faebf7693b4f6ef7ae661ce948c38a2825ae3b2b0d77d2d
+      inlined_ast: 8e4d99a433d9c2432faebf7693b4f6ef7ae661ce948c38a2825ae3b2b0d77d2d
+      dce_ast: 8e4d99a433d9c2432faebf7693b4f6ef7ae661ce948c38a2825ae3b2b0d77d2d
+      bytecode: 9f8baa3f1bada186c32440e4880e858bd76b54dedb2d667a2b93c2d2a98f0752
+      warnings: ""
+      results:
+        address_casts:
+          - input: "[aleo1hjnn8jdxlzzlqjywamdx4hzcxny5gszzm0q5xmnae4ed6qqn2gys4ugtey]"
+            output: "SnarkVMError('test.aleo/address_casts' is not satisfied on the given inputs (30871 constraints).)"
+        bool_casts:
+          - input: "[false]"
+            output: "[aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3ljyzc, false, 0field, 0group, 0i8, 0i16, 0i32, 0i64, 0i128, 0u8, 0u16, 0u32, 0u64, 0u128, 0scalar]"
+        field_casts:
+          - input: "[0field]"
+            output: "[aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3ljyzc, false, 0field, 0group, 0i8, 0i16, 0i32, 0i64, 0i128, 0u8, 0u16, 0u32, 0u64, 0u128, 0scalar]"
+        group_casts:
+          - input: "[0group]"
+            output: "[aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3ljyzc, false, 0field, 0group, 0i8, 0i16, 0i32, 0i64, 0i128, 0u8, 0u16, 0u32, 0u64, 0u128, 0scalar]"
+        i128_casts:
+          - input: "[0i128]"
+            output: "[aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3ljyzc, false, 0field, 0group, 0i8, 0i16, 0i32, 0i64, 0i128, 0u8, 0u16, 0u32, 0u64, 0u128, 0scalar]"
+        i16_casts:
+          - input: "[0i16]"
+            output: "[aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3ljyzc, false, 0field, 0group, 0i8, 0i16, 0i32, 0i64, 0i128, 0u8, 0u16, 0u32, 0u64, 0u128, 0scalar]"
+        i32_casts:
+          - input: "[0i32]"
+            output: "[aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3ljyzc, false, 0field, 0group, 0i8, 0i16, 0i32, 0i64, 0i128, 0u8, 0u16, 0u32, 0u64, 0u128, 0scalar]"
+        i64_casts:
+          - input: "[0i64]"
+            output: "[aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3ljyzc, false, 0field, 0group, 0i8, 0i16, 0i32, 0i64, 0i128, 0u8, 0u16, 0u32, 0u64, 0u128, 0scalar]"
+        i8_casts:
+          - input: "[0i8]"
+            output: "[aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3ljyzc, false, 0field, 0group, 0i8, 0i16, 0i32, 0i64, 0i128, 0u8, 0u16, 0u32, 0u64, 0u128, 0scalar]"
+        scalar_casts:
+          - input: "[0scalar]"
+            output: "[aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3ljyzc, false, 0field, 0group, 0i8, 0i16, 0i32, 0i64, 0i128, 0u8, 0u16, 0u32, 0u64, 0u128, 0scalar]"
+        u128_casts:
+          - input: "[0u128]"
+            output: "[aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3ljyzc, false, 0field, 0group, 0i8, 0i16, 0i32, 0i64, 0i128, 0u8, 0u16, 0u32, 0u64, 0u128, 0scalar]"
+        u16_casts:
+          - input: "[0u16]"
+            output: "[aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3ljyzc, false, 0field, 0group, 0i8, 0i16, 0i32, 0i64, 0i128, 0u8, 0u16, 0u32, 0u64, 0u128, 0scalar]"
+        u32_casts:
+          - input: "[0u32]"
+            output: "[aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3ljyzc, false, 0field, 0group, 0i8, 0i16, 0i32, 0i64, 0i128, 0u8, 0u16, 0u32, 0u64, 0u128, 0scalar]"
+        u64_casts:
+          - input: "[0u64]"
+            output: "[aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3ljyzc, false, 0field, 0group, 0i8, 0i16, 0i32, 0i64, 0i128, 0u8, 0u16, 0u32, 0u64, 0u128, 0scalar]"
+        u8_casts:
+          - input: "[0u8]"
+            output: "[aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3ljyzc, false, 0field, 0group, 0i8, 0i16, 0i32, 0i64, 0i128, 0u8, 0u16, 0u32, 0u64, 0u128, 0scalar]"
